@@ -1,0 +1,77 @@
+5주차 예제참고해서 css 적용하기. 
+-*{} 사용(전체 적용):폰트, 박스 사이즈 등.
+
+atl shift 아래 화살표 누르면 코드 복제가 됨
+a태그는 a치고 엔터 누르면 바로 완성 (하이퍼링크 요소)
+주소는 ./로 시작함
+a태그는 기본적으로 인라인. 
+li는 목록 아이템
+
+alt 화살표 하면 그 줄을 위로 올리거나 내릴 수 있음. (shift 화살표는 복사)
+li을 한번더 감싸야 함.
+ol 과 ul이 있음.
+
+alt 누른 채로 마우스 커서 눌러서 다중 입력이 가능함
+
+최초로 존재하는 파일, 메인은 무조건 index.html이어야함
+
+네비게이션 nav는 div와 똑같음. 탐색을 위해 이름만 nav임.같은 이유로 텍스트가 h숫자 인것도 탐색을 위해.(검색엔진최적화)
+
+*{} 은 모든 태그에 적용하는 것. 폰트나 보드 설정을 이걸로 할 수 있음.
+
+.nav .logo와 .nav .menu도 있어서 nav 사용법도 a태그 처럼 봐두는 게 좋을 듯. 
+nav{
+	logo{ }
+}
+와 
+nav{
+	>logo{ }
+}
+는 다르다. 자세한 건 니니한테 물어보기.
+예제에서 수정되었으니 어떤식으로 썼는지 확인해보기. 이름이 .nav . logo 같은게 아니더라도 nav안에 있는 logo 기능을 쓸 수 있게 들여쓰기로 해주는 거인듯.적용은 샌드박스처럼. 코드블럭처럼.
+
+input 기능도 여러가지라 찾아보는 걸 추천하셧긔
+
+masonry 그리드: 벽돌쌓는 듯한 그리드-예시 핀터레스트
+
+grid-template-columns: 1fr 1fr 1fr 1fr;
+grid-template-columns: 1fr 100px 1fr 1fr;
+grid-template-columns: repeat(4, 1fr);
+적용하면 그리드인데 각 박스들의 크기를 일부 설정할 수 있음.
+근데 예제처럼 grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+auto-fit이 제일 무난한듯 minmax으로 최소 작아지게 하는 단위도 좋고.
+
+
+bento-box
+<사실 집중 제대로 안함 이것도 인터넷 검색에서 정독 후 니니한테 복습해야겠음.
+
+  &.box1 {
+    grid-column: 2 / span 2;
+    grid-row: 2 / span 2;
+  }
+벤토박스 지우고 새로 시도해본 예제인데 1번임에도 원하는 위치에 놓을 수 있음
+&가 가지는 의미가 있어서 이것도 공부 ㄱㄱ
+
+[박스 시도 예제] 
+ &.box1 {
+    grid-column: 2 / span 2;
+    grid-row: 2 / span 2;
+  }
+  &.box5 {
+    grid-column: 4 / span 1;
+    grid-row: 1 / span 3;
+  }
+  &.box7 {
+    grid-column: 1 / span 2;
+    grid-row: 3 / span 2;
+  }
+&.box8 {
+    grid-column: 1 / span 4;
+    grid-row: 5 / span 1;
+  }
+
+-----------
+일부러 공간 비워놓는 식으로 디자인할 수 있음. 
+
+
+
